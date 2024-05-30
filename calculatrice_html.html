@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            margin-top: 50px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        form{
+            padding: 20px;
+            background-color: lightcoral;
+
+        }
+        fieldset:hover{
+            transform: scale(1.1);
+        }
+        label, legend,button{
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        fieldset,input,button,form{
+            border-radius: 25px;
+        }
+        button{
+            background-color: lightblue;
+            border: 0.5px solid lightblue;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>calculatrice</legend>
+        <form action="calculatricephp.php" method="post">
+            <label for="num1">
+                numero 1 : 
+            </label>
+            <input type="text" name="num1" id="num1"> <br> <br>
+            <label for="num2">
+                numero 2 : 
+            </label>
+            <input type="text" name="num2" id="num2"> <br> <br>
+            <label for="op">operation : </label>
+            <select name="op" id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select><br><br>
+            <button type="submit"> envoyer </button><br> <br>
+
+
+        </form>
+    </fieldset>
+</body>
+</html>
